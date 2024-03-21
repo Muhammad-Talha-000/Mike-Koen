@@ -8,6 +8,7 @@ body{
     width: auto;
 }
 header{
+    position: relative;
     width: 100%;
     background-image: url(https://www.figma.com/file/myxZlnhTBirDGWW74C6Gsd/image/47923ca0670d5c0a3c78ae1a409e6e08f53b3017);
     background-size: cover;
@@ -124,11 +125,12 @@ nav{
     text-decoration: none;
 }
 .heading1, .text4head{
+    margin: 0;
     color: #454545;
     font-family: "Poppins";
     font-size: 32px;
     font-weight: 300;
-    line-height: 0;
+    line-height: 38.4px;
     letter-spacing: 0px;
     text-align: center;
 }
@@ -311,7 +313,6 @@ nav{
 }
 .section8, .section9{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 130px;
@@ -357,7 +358,8 @@ nav{
     font-family: "Poppins";
     font-size: 46px;
     font-weight: 500;
-    line-height: 15px;
+    line-height: 67.2px;
+    margin: 0;
     letter-spacing: 0px;
     text-align: center;    
 }
@@ -388,7 +390,7 @@ nav{
 .sec10main{
     width: 610px;
     text-align: center;
-    padding: 70px 0px;
+    padding: 70px 5px;
     background: linear-gradient(97.3deg, #7A0025 0%, #AE002A 100%);
     color: white;
 }
@@ -412,9 +414,14 @@ nav{
     font-family: "Poppins";
     font-size: 56px;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 67.2px;
+    margin: 0;
     letter-spacing: 0px;
     text-align: center;    
+}
+.flex img{
+    width: 267.5px;
+    height: 250px;
 }
 .sec10main button{
     margin-top: 10px;
@@ -462,6 +469,7 @@ nav{
     text-align: center;    
 }
 .sec11date{
+    margin: 0;
     font-family: "Poppins";
     font-size: 14px;
     font-weight: 400;
@@ -593,7 +601,7 @@ nav{
     width: 440px;
     padding: 20px;
 }
-.videopic{
+.videopic, .videopic1{
     position: relative;
 }
 .sec14date{
@@ -753,18 +761,28 @@ footer{
         gap: 60px;
         padding: 70px 50px;
     }
-    .section10{
-        flex-direction: column;
-        gap: 30px;
-        margin: 0 10px;
+    .sec10main{
+        width: 460px;
+        height: 460px;
     }
     .section9{
         gap: 50px;
     }
 }
 @media screen and (max-width:1230px) {
+    .box2 img {
+        width: 210px;
+        height: 210px;
+    }
+    .buyers,.sellers{
+        width: 500px;
+        height: 500px;
+    }
+    .section4{
+        height: 240px;
+    }
     .section2,.section5{
-        flex-direction: column;
+        /* flex-direction: column; */
         margin: 0 5px;
     }
     .primary, .secondary{
@@ -773,13 +791,25 @@ footer{
     .sec6text{
         line-height: normal;
         margin: 30px 5px 0px 5px;
-        width: auto;
-    }
-    .sec6flex{
-        flex-direction: column;
     }
     .videopic{
-        max-width: 590px;
+        max-width: 500px;
+    }
+    .videopic1{
+        max-width: 1030px;
+    }
+    .section7{
+        margin: 80px 0 60px 0;
+    }
+    .section8{
+        gap: 70px;
+    }
+    .section9{
+        gap: 30px;
+        margin: 0 10px 100px 10px;
+    }
+    .sec9text{
+        width: auto;
     }
     .pics{
         max-width: 542px;
@@ -822,25 +852,62 @@ footer{
     }
 }
 @media screen and (max-width:1070px) {
+    .section1{
+        gap: 30px;
+    }
     .section14{
         gap: 40px;
     }
     .sec14main{
         gap: 5px;
     }
-    .section1{
-        flex-direction: column;
-    }
     .pic{
         display: none;
+    }
+    .section8{
+        gap: 30px;
+    }
+    .videopic{
+        width: 400px;
+    }
+    .videopic1{
+        width: 830px;
+    }
+    .buyers, .sellers{
+        width: 400px;
+        height: 400px;
+    }
+    .box4, .box2, .section2{
+        gap: 10px;
+    }
+    .pics{
+        max-width: 510px;
     }
 }
 @media screen and (max-width:990px) {
     .section13{
         gap: 20px;
     }
+    .box2 img{
+        width: 150px;
+        height: 150px;
+    }
+    .pics{
+        width: 376px;
+    }
+    .section8 img, .sec8text, .sec8head{
+        width: 200px;
+    }
 }
 @media screen and (max-width:940px) {
+    .section10{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sec10main{
+        width: 790px;
+        height: 450px;
+    }
     .section14{
         flex-direction: column;
         gap: 0;
@@ -862,7 +929,38 @@ footer{
         margin-bottom: 30px;
     }
 }
+@media screen and (max-width:880px) {
+    .section1{
+        flex-direction: column;
+    }
+    .buyers, .sellers{
+        width: 300px;
+        height: 300px;
+    }
+    .flextext{
+        font-size: 50px;
+    }
+    .videopic1{
+        width: 630px;
+    }
+    .videopic{
+        width: 300px;
+    }
+    .play{
+        top: 40%;
+        left: 40%;
+    }
+    .section4{
+        gap: 30px;
+    }
+}
 @media screen and (max-width:810px) {
+    .sec10main{
+        width: 600px;
+    }
+    .section9{
+        flex-direction: column;
+    }
     .section4{
         flex-direction: column;
         gap: 0;
@@ -870,7 +968,7 @@ footer{
     .section7{
         display: none;
     }
-    .section8, .section9{
+    .section9{
         gap: 60px;
         margin: 30px 10px;
     }
@@ -881,7 +979,7 @@ footer{
         font-size: 40px;
     }
     .logoimage{
-        display: none;
+        /* display: none; */
     }
     .section1{
         padding: 50px 30px;
@@ -891,22 +989,42 @@ footer{
         margin: 0;
     }
     .section15{
-        margin: 50px 0 0 0;
+        margin: 50px 0;
+    }
+    .sec6text{
+        width: auto;
     }
 }
-@media screen and (max-width:680px) {
+@media screen and (max-width:712px) {
+    .section13{
+        gap: 0;
+    }
+    .section2{
+        flex-direction: column;
+    }
+    .section8{
+        gap: 20px;
+    }
+    .box2 img, .pics{
+        width: auto;
+        height: auto;
+    }
+}
+@media screen and (max-width:685px) {
+    .flex img,.sec11text{
+        width: auto;
+        height: auto;
+    }
+    .section13{
+        justify-content: left;
+        margin: 50px 20px;
+    }
     .primaryh{
         top: 50px;
         gap: 12px;
     }
-    .section8{
-        gap: 40px;
-    }
     .text{
         font-size: 40px;
-    }
-    .section13{
-        margin: 50px 0;
     }
     .sec13text{
         line-height: normal;
@@ -918,14 +1036,27 @@ footer{
     }
 }
 @media screen and (max-width:660px) {
-    .reverse{
+    .section8{
+        flex-direction: column;
+    }
+    .section8 div{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .section8 .reverse{
         flex-direction: column-reverse;
     }
-    .pics{
-        max-width: 255px;
+    .sec8text, .sec8head{
+        width: 500px;
     }
-    .box2{
-        flex-direction: column;
+    .section8 img{
+        width: 400px;
+        height: 300px;
+    } 
+    .section5{
+        gap: 5px;
     }
     .sec3text{
         line-height: normal;
@@ -941,7 +1072,7 @@ footer{
         max-width: 370px;
         margin: 0 5px;
     }
-    .flextext, .sec12text, .sec12text span{
+    .sec12text, .sec12text span{
         font-size: x-large;
         line-height: normal;
     }
@@ -975,16 +1106,27 @@ footer{
     .sec9text{
         font-size: medium;
     }
+    .sec6flex, .sec6pic{
+        gap: 25px;
+    }
+    .videopic1{
+        width: 480px;
+    }
+    .videopic{
+        width: 230px;
+    }
+    .play{
+        top: 32%;
+        left: 32%;
+    }
+    .play1{
+        top: 30%;
+        left: 42%;
+    }
 }
 @media screen and (max-width:630px) {
     .sec10main{
-        max-width: 370px;
-        margin: 0px 5px;
-        padding: 20px 20px 30px 20px;
-    }
-    .play1{
-        top: 20%;
-        left: 41%;
+        max-width: 500px;
     }
     .sec10head{
         font-size: 34px;
@@ -992,6 +1134,7 @@ footer{
     .sec10text{
         font-size: larger;
         line-height: normal;
+        padding: 0 17px;
     }
     .sec1main{
         width: auto;
@@ -1004,12 +1147,11 @@ footer{
         line-height: normal;
         margin-bottom: 10px;
     }
-    .videopic{
-        max-width: 370px;
+    .section5{
+        flex-direction: column;
     }
-    .play{
-        top: 35%;
-        left: 40%;
+    .buyers, .sellers{
+        width: auto;
     }
     nav{
         padding: 10px 20px;
@@ -1052,6 +1194,35 @@ footer{
     .logoimage{
         max-width: 290px;
     }
+    .flex img, .sec10main{
+        width: 400px;
+        height: auto;
+        padding: 50px 0;
+    }
+    .box2 img{
+        height: 200px;
+    }
+    .pics{
+        height: 344px;
+    }
+    .sec6pic{
+        gap: 10px;
+    }
+    .sec6flex{
+        gap: 20px;
+    }
+    .videopic1{
+        width: 380px;
+    }
+    .videopic{
+        width: 180px;
+    }
+    .play{
+        top: 24%;
+    }
+    .sec8text, .sec8head{
+        width: 380px;
+    }
 }
 @media screen and (max-width:540px) {
     .sec14option, .section15{
@@ -1075,15 +1246,6 @@ footer{
     }
 }
 @media screen and (max-width:480px) {
-    .sec9head, .sec10text,.sec10head, .heading1{
-        margin: 0;
-        line-height: normal;
-    }
-    .sec10main{
-        max-width: 290px;
-        gap: 10px;
-        display: grid;
-    }
     .input,.review{
         max-width: 290px;
     }
@@ -1091,11 +1253,46 @@ footer{
         width: 170px;
     }
 }
-@media screen and (max-width:390px) {
-    .videopic,.sellers, .buyers{
-        max-width: 290px;
-        margin: 0 5px;
+@media screen and (max-width:420px) {
+    .box2 img{
+        height: 140px;
     }
+    .pics{
+        height: 243px;
+    }
+    .sec6flex{
+        flex-direction: column;
+    }
+    .videopic1, .videopic{
+        width: 260px;
+    }
+    .buyers, .sellers{
+        height: 230px;
+    }
+    .section8 img,.sec8text, .sec8head{
+        width: 290px;
+        margin: 5px 0 0 0;
+    }
+    .sec10main{
+        width: 290px;
+    }
+    .sec10head{
+        font-size: 30px;
+    }
+    .flex img{
+        padding: 0;
+        width: 290px;
+    }
+    .play{
+        top: 31%;
+        left: 37%;
+    }
+    .play1{
+        top: 11%;
+        left: 37%;
+    }
+}
+@media screen and (max-width:390px) {
     nav{
         padding: 15px;
     }
