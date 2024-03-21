@@ -69,7 +69,7 @@ header{
     justify-content: left;
     align-items: center;
     flex-direction: column;
-    margin: 90px 0;
+    margin: 90px 10px;
 }
 .s2head{
     color: #98002E;
@@ -110,13 +110,10 @@ header{
 
 @media screen and (max-width:1180px){
     .s1{
-        flex-direction: column;
         gap: 30px;
     }
     .s2text, .pi{
-        width: 900px;
-        margin: 0 10px;
-        text-align: center;
+        width: 1000px;
     }
     .s4, .s2{
         margin: 50px 0;
@@ -125,9 +122,72 @@ header{
         line-height: normal;
         margin: 0;
     }
+    .s3text, .s3 img{
+        width: 280px;
+    }
+}
+@media screen and (max-width:1080px) {  
+    .s2text, .pi{
+        width: 900px;
+    }
+    .s1 img{
+        height: 300px;
+    }
+    .s1main{
+        width: 350px;
+    }
+}
+@media screen and (max-width:900px) {
+    .s2text, .pi{
+        width: 800px;
+    }
+    .s1main{
+        width: 250px;
+    }
+}
+@media screen and (max-width:800px) {
+    .s2text, .pi{
+        width: 700px;
+    }
+}
+@media screen and (max-width:750px) {
+    .s1{
+        flex-direction: column;
+    }
+    .s1main{
+        width: 500px;
+    }
+    .s1 img{
+        width: 500px;
+    }
+}
+@media screen and (max-width:700px) {
+    .s2text, .pi, .s1 img{
+        width: 600px;
+    }
+}
+@media screen and (max-width:600px) {
+    .s2text, .pi, .s1 img, .s1main{
+        width: 500px;
+    }
+}
+@media screen and (max-width:500px) {
+    .s2text, .pi, .s1 img, .s1main{
+        width: 400px;
+    }
+}
+@media screen and (max-width:400px) {
+    .s2text, .pi, .s1 img, .s1main{
+        width: 300px;
+    }
+}
+@media screen and (max-width:300px) {
+    .s2text, .pi, .s1 img, .s1main{
+        width: 280px;
+    }
 }
 @media screen and (max-width:920px) {
-    .s2text, .pi{
+    .s2text{
         width: 600px;
         margin: 10px;
     }
@@ -150,10 +210,6 @@ header{
     }
 }
 @media screen and (max-width:620px) {
-    .pi{
-        width: 290px;
-        margin: 10px;
-    }
     .s4{
         margin: 25px 10px;
     }

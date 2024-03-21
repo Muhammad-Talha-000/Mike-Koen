@@ -289,9 +289,6 @@ header{
     }
 }
 @media screen and (max-width:580px) {
-    .s1, .s3, .s5{
-        /* margin: 0; */
-    }
     .smain, .pi, .s4child, .backpic, .s4child img{
         width: 400px;
     }
