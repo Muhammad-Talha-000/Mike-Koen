@@ -50,7 +50,8 @@ header{
     font-family: "Poppins";
     font-size: 24px;
     font-weight: 500;
-    line-height: 0;
+    line-height: 33.6px;
+    margin: 0;
     text-align: center;
     color: #454545;    
 }
@@ -192,13 +193,11 @@ header{
 }
 
 @media screen and (max-width:1180px) {
-    .s1, .s2, .s4main{
-        flex-direction: column;
-        margin-bottom: 50px;
+    .s2, .s1, .s21{
+        margin-bottom: 40px;
     }
-    .s21{
-        flex-direction: column-reverse;
-        margin-bottom: 50px;
+    .pi{
+        height: 300px;
     }
     .s4main{
         gap: 30px;
@@ -216,6 +215,22 @@ header{
         margin: 0 100px 50px 100px;
     }
 }
+@media screen and (max-width:1111px) {
+    .pi{
+        height: 200px;
+    }
+    .s4child img, .s4child{
+        width: 460px;
+    }
+}
+@media screen and (max-width:990px) {
+    .smain{
+        width: 450px;
+    }
+    .s4child img, .s4child{
+        width: 360px;
+    }
+}
 @media screen and (max-width:920px) {
     .text{
         font-size: 50px;
@@ -229,8 +244,14 @@ header{
     }
 }
 @media screen and (max-width:820px) {
+    .smain{
+        width: 380px;
+    }
+    .s4child img, .s4child{
+        width: 340px;
+    }
     .backpic{
-        max-width: 530px;
+        max-width: 700px;
     }
     .s5head{
         font-size: 40px;
@@ -244,13 +265,35 @@ header{
         margin: 0 70px 50px 70px;
     }
 }
-
+@media screen and (max-width:740px) {
+    .s1,.s2,.s4main{
+        flex-direction: column;
+    }
+    .s21{
+        flex-direction: column-reverse;
+    }
+    .smain, .s2text,.s4child{
+        width: auto;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .pi{
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .s4child img{
+        width: auto;
+    }
+    .backpic{
+        width: 540px;
+    }
+}
 @media screen and (max-width:580px) {
     .s1, .s3, .s5{
-        margin: 0;
+        /* margin: 0; */
     }
-    .smain, .pi, .s4child, .backpic{
-        max-width: 400px;
+    .smain, .pi, .s4child, .backpic, .s4child img{
+        width: 400px;
     }
     .s1text, .s4top, .s4head, .s3head{
         line-height: normal;
@@ -286,7 +329,7 @@ header{
     }
 }
 @media screen and (max-width:410px) {
-    .smain, .pi, .s4child, .backpic{
+    .smain, .pi, .s4child, .backpic, .s4child img{
         max-width: 280px;
     }
     .s5head{

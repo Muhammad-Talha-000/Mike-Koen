@@ -354,6 +354,7 @@ nav{
     text-align: center;
 }
 .sec9head{
+    padding: 0 10px;
     color: #98002E;
     font-family: "Poppins";
     font-size: 46px;
@@ -978,9 +979,6 @@ footer{
     .sec6text{
         font-size: 40px;
     }
-    .logoimage{
-        /* display: none; */
-    }
     .section1{
         padding: 50px 30px;
     }
@@ -1048,8 +1046,13 @@ footer{
     .section8 .reverse{
         flex-direction: column-reverse;
     }
-    .sec8text, .sec8head{
+    .sec8text{
         width: 500px;
+    }
+    .sec8head{
+        width: 500px;
+        margin-top: 40px;
+        margin-bottom: -10px;
     }
     .section8 img{
         width: 400px;
@@ -1194,10 +1197,19 @@ footer{
     .logoimage{
         max-width: 290px;
     }
-    .flex img, .sec10main{
+    .sec10main{
         width: 400px;
         height: auto;
         padding: 50px 0;
+    }
+    .sec11{
+        gap: 50px;
+    }
+    .sec11text, .sec11head{
+        margin: 8px 0 0 0;
+    }
+    .flex img{
+        width: 400px;
     }
     .box2 img{
         height: 200px;
