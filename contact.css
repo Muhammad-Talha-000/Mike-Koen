@@ -234,13 +234,17 @@ form input{
         flex-direction: column;
     }
     .section15{
-        width: 422px ;
-        margin-bottom: 0;
+        width: 600px;
+    }
+}
+@media screen and (max-width:620px) {
+    .section15{
+        width: 500px;
     }
 }
 @media screen and (max-width:540px) {
     .section15{
-        max-width: 380px !important;
+        width: 400px;
     }
 }
 @media screen and (max-width:520px) {
@@ -275,7 +279,7 @@ form input{
         font-size: 40px;
     }
     .section15{
-        max-width: 300px !important;
+        max-width: 350px !important;
     }
 }
 @media screen and (max-width:350px) {
