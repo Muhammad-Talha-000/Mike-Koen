@@ -65,6 +65,9 @@ nav{
 .downarrow{
     color: white;
 }
+.secondary a{
+    text-decoration: none;
+}
 .primary button, .secondary button, .primaryh button{
     background-color: transparent;
     display: flex;
@@ -489,6 +492,9 @@ nav{
     text-align: center;
     color: #454545;    
 }
+.social img,.section15 img, .sec14main img{
+    cursor: pointer;
+}
 .section12{
     margin: 0 30px 100px 30px;
     padding: 100px 10px;
@@ -575,7 +581,6 @@ nav{
     color: #98002E;    
 }
 .sec13text{
-    cursor: pointer;
     font-family: "Poppins";
     font-size: 18px;
     font-weight: 400;
