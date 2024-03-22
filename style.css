@@ -640,10 +640,7 @@ nav{
     background-color: white;
     padding: 15px;
     border-radius: 10px;
-}
-.input input{
     border: none;
-    height: 29px;
     color: #6C757D;
     font-family: "Poppins";
     font-size: 19px;
