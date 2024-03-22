@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" target="home"><img class="logo" src="images/header logo.png" alt="logo"></a>
+            <a href="index.html"><img class="logo" src="images/header logo.png" alt="logo"></a>
             <div class="primary">
                 <button>
                     <p class="button">Buyer</p>
@@ -23,7 +23,7 @@
                     <p class="button">Seller</p>
                     <img src="images/Vector.png" alt="dropdown">
                 </button>
-                <a href="investor.html" target="investor" style="text-decoration: none;"><button>
+                <a href="investor.html" style="text-decoration: none;"><button>
                     <p class="button">Investors</p>
                     <img src="images/Vector.png" alt="dropdown">
                 </button></a>
@@ -34,24 +34,24 @@
                 <img src="images/search.png" alt="search">
             </div>
             <div class="secondary">
-                <a href="about.html" style="text-decoration: none;" target="about"><button>
+                <a href="about.html" style="text-decoration: none;"><button>
                     <p class="secondarytext">About</p>
                     <img src="images/Vector.png" alt="dropdown">
                 </button></a>
                 <button>
                     <p class="secondarytext">Agents</p>
                 </button>
-                <a href="contact.html" target="contact"><button id="secbutton"><p>Contact</p></button></a>
+                <a href="contact.html"><button id="secbutton"><p>Contact</p></button></a>
             </div>
             <i class="fa-solid fa-bars" id="hamburger">
                 <div class="primaryh">
                     <button><p class="buttonh">Buyer</p></button>
                     <button><p class="buttonh">Seller</p></button>
-                    <a href="investor.html" target="investor" style="text-decoration: none;"><button><p class="buttonh">Investors</p></button></a>
+                    <a href="investor.html" style="text-decoration: none;"><button><p class="buttonh">Investors</p></button></a>
                     <button><p class="buttonh">Property Management</p></button>
-                    <a href="about.html" style="text-decoration: none;" target="about"><button><p class="secondarytexth">About</p></button></a>
+                    <a href="about.html" style="text-decoration: none;"><button><p class="secondarytexth">About</p></button></a>
                     <button><p class="secondarytexth">Agents</p></button>
-                    <a href="contact.html" target="contact"><button id="secbuttonh"><p>Contact</p></button></a>
+                    <a href="contact.html"><button id="secbuttonh"><p>Contact</p></button></a>
                 </div>
             </i>
         </nav>
@@ -100,9 +100,7 @@
                 </div>
                 <form >
                     <label for="message">Message</label>
-                    <div class="input">
-                        <input type="text" id="message" placeholder="..." maxlength="150" required>
-                    </div>
+                    <div><textarea name="text" id="message" cols="30" rows="4" class="input" maxlength="150" required placeholder="..."></textarea></div>
                     <p class="s2text">150 word max</p>
                 </form>
                 <button>Send</button>

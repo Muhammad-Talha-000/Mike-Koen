@@ -3,7 +3,7 @@
 }
 header{
     width: 100%;
-    background-image: url(https://s3-alpha-sig.figma.com/img/e2ed/9b66/da2c21f3b3bcc83c5ec95fc2508b2a43?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oJ1~ncndCbldzpYeSq88V1TEyK-KT0EMlnq8oi4faHnb-cTCUW2OOrDLbjYMGsmGrIS-nK~dq-h8fPX6HBxgBnWSp-cWa54WoIoZRFlcJmAgQzxPidb2qNditvhaFTn0iqpzPuBApPSCvhNHgxeCE2C9zFdwRf1oAlrF~JoPlKspIAWOhE1NsP1mxr0Vzmxxs3dWF2dF2Eu3nTYA33poyHmTIOqc4bo7hkW6PEPIuKRsF0VG5NMSFu1SUA-RO6McgPH9hjO0Bz1tkrYYcaMs-SM2JxXCD-~tVV0VvUqhIL7L6Z8COUnxb-am-sIa7Y6OvEnQyd4l5dKvS5vnWh8rIg__);
+    background-image: url(investor-images/investor\ image.png);
     background-size: cover;
     background-position: center;
 }
@@ -196,7 +196,7 @@ header{
     .s2, .s1, .s21{
         margin-bottom: 40px;
     }
-    .pi{
+    .pi, .smain{
         width: 500px;
     }
     .s4main{
@@ -223,10 +223,17 @@ header{
         width: 460px;
     }
 }
-@media screen and (max-width:990px) {
-    .smain{
+@media screen and (max-width:1060px) {
+    .smain, .pi{
         width: 450px;
     }
+}
+@media screen and (max-width:950px) {
+    .smain, .pi{
+        width: 400px;
+    }
+}
+@media screen and (max-width:990px) {
     .s4child img, .s4child{
         width: 360px;
     }
@@ -243,10 +250,12 @@ header{
         padding: 15px;
     }
 }
-@media screen and (max-width:820px) {
-    .smain{
-        width: 380px;
+@media screen and (max-width:850px) {
+    .smain, .pi{
+        width: 350px;
     }
+}
+@media screen and (max-width:820px) {
     .s4child img, .s4child{
         width: 340px;
     }
@@ -278,20 +287,20 @@ header{
         text-align: center;
     }
     .pi{
+        width: 600px;
         height: auto;
         margin-bottom: 20px;
     }
-    .s4child img{
-        width: auto;
+    .smain,.s4child img,.s4text, .backpic{
+        width: 600px;
     }
-    .backpic{
-        width: 540px;
+}
+@media screen and (max-width:630px) {
+    .smain,.s4child img,.s4text, .pi, .backpic{
+        width: 500px;
     }
 }
 @media screen and (max-width:580px) {
-    .smain, .pi, .s4child, .backpic, .s4child img{
-        width: 400px;
-    }
     .s1text, .s4top, .s4head, .s3head{
         line-height: normal;
         margin: 0;
@@ -313,6 +322,11 @@ header{
         margin: 0 50px 30px 50px;
     }
 }
+@media screen and (max-width:530px) {
+    .smain,.s4child img,.s4text, .pi, .backpic{
+        width: 400px;
+    }
+}
 @media screen and (max-width:460px) {
     .headermain{
         flex-direction: column;
@@ -324,14 +338,8 @@ header{
     .text{
         font-size: 40px;
     }
-    .s4child img{
-        width: 320px;
-    }
 }
-@media screen and (max-width:410px) {
-    .smain, .pi, .s4child, .backpic, .s4child img{
-        max-width: 280px;
-    }
+@media screen and (max-width:420px) {
     .s5head{
         font-size: 24px;
     }
@@ -340,5 +348,11 @@ header{
     }
     .s4main{
         margin: 20px 0;
+    }
+    .smain,.s4child img,.s4text, .pi, .backpic{
+        width: 290px;
+    }
+    .s4child{
+        padding: 0 5px;
     }
 }

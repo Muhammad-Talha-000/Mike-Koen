@@ -9,7 +9,7 @@ body{
 }
 header{
     width: 100%;
-    background-image: url(https://s3-alpha-sig.figma.com/img/dfd9/8fe5/0cbb42516af222edc6198e62897f4b5e?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KO0~1oT5YmOC2K9bn0RHfhQAFd7jFxCXVbMShqDhmGvfnp-TEvlNCYk8Q07xF2XrAcPyeO~A5P-z3luZdZuhDoMtAP8IgyTgY0YvNw8nBbDK6BRaQFh7sBcTMRfBAXbVlyxMueB4XNpm4M-XguMUw3RLyJ0fStPg7-xywMFoZOtoIcuCzEPeFK5olp4JVohsmw1HDvPDcmvSHefuM~RI8ohScxL9yPpiCYxAHhgoG5ZYyC7-e0eoo6LY7LqaM55wF4~i3lJ5gIFSydfp0YXmqXBVTsEXojDY9d9uvT9gQHNM~KkTiqFvX~DetWcpRXYDcIWQEBQGeLrjcdyyKsamsQ__);
+    background-image: url(images/contact\ image.png);
     background-size: cover;
     background-position: center;
 }
@@ -93,7 +93,7 @@ form input{
     text-align: left;    
 }
 .input{
-    padding: 0;
+    padding: 16px;
     width: 255px;
     height: 118px;
     border-radius: 4.8px;
