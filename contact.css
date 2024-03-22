@@ -154,22 +154,40 @@ form input{
     flex-direction: row;
     gap: 80px;  
 }
-
+.section15 img{
+    width: auto !important;
+    height: auto !important;
+}
+.flex img{
+    width: 500px;
+    height: 95.28px;    
+}
 @media screen and (max-width:1060px) {
-    .flex, .bottom{
+    .section15{
+        width: 380px;
+    }
+    .bottom{
         flex-direction: column;
         gap: 0px;
         margin-top: 40px;
-    }
-    .section15{
-        margin: 0 0 15px 0;
     }
     .s2{
         margin: 50px 10px;
         gap: 50px;
     }
+    .flex img{
+        width: 400px;
+        height: 80.28px;    
+    }
 }
 @media screen and (max-width:920px) {
+    form input, .s2form{
+        width: 380px;
+    }
+    .flex img{
+        width: 300px;
+        height: 68.28px;    
+    }
     .text{
         font-size: 50px;
     }
@@ -179,11 +197,6 @@ form input{
     }
     nav{
         padding: 15px;
-    }
-    .s2{
-        flex-direction: column;
-        margin: 10px;
-        gap: 0;
     }
     .s1, .s2 h1, .sec14bottom{
         line-height: normal;
@@ -198,9 +211,41 @@ form input{
         justify-content: center;
     }
 }
+@media screen and (max-width:820px) {
+    form input, .s2form{
+        width: 300px;
+    }
+    .flex{
+        gap: 40px;
+    }
+    .section15{
+        width: 340px;
+    }
+}
+@media screen and (max-width:720px) {
+    .s2{
+        flex-direction: column;
+        gap: 20px;
+    }
+    form input, .s2form{
+        width: 474px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .section15{
+        width: 422px ;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width:540px) {
+    .section15{
+        max-width: 380px !important;
+    }
+}
 @media screen and (max-width:520px) {
-    form input{
-        width: 290px;
+    form input, .s2form{
+        width: 390px;
     }
     .s1{
         font-size: 35px;
@@ -214,11 +259,11 @@ form input{
     .inpt{
         width: 280px;
     }
-    .s2form{
-        gap: 10px;
-    }
 }
 @media screen and (max-width:460px) {
+    .s2form, form input{
+        width: 320px;
+    }
     .headermain{
         flex-direction: column;
         justify-content: start;
@@ -228,5 +273,23 @@ form input{
     }
     .text{
         font-size: 40px;
+    }
+    .section15{
+        max-width: 300px !important;
+    }
+}
+@media screen and (max-width:350px) {
+    .s2form, form input{
+        width: 280px;
+    }
+    .s2form div{
+        gap: 18px!important;
+    }
+    .section15{
+        max-width: 280px !important;
+    }
+    .flex img{
+        width: 250px;
+        height: auto;
     }
 }

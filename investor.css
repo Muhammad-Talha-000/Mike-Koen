@@ -197,7 +197,7 @@ header{
         margin-bottom: 40px;
     }
     .pi{
-        height: 300px;
+        width: 500px;
     }
     .s4main{
         gap: 30px;
@@ -323,6 +323,9 @@ header{
     }
     .text{
         font-size: 40px;
+    }
+    .s4child img{
+        width: 320px;
     }
 }
 @media screen and (max-width:410px) {
