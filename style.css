@@ -769,6 +769,9 @@ footer{
     .section9{
         gap: 50px;
     }
+    .flex{
+        margin-bottom: 10px;
+    }
 }
 @media screen and (max-width:1230px) {
     .box2 img {
@@ -791,7 +794,8 @@ footer{
     }
     .sec6text{
         line-height: normal;
-        margin: 30px 5px 0px 5px;
+        margin-top: 30px;
+        width: 780px;
     }
     .videopic{
         max-width: 500px;
@@ -807,7 +811,7 @@ footer{
     }
     .section9{
         gap: 30px;
-        margin: 0 10px 100px 10px;
+        margin: 0 30px 100px 30px;
     }
     .sec9text{
         width: auto;
@@ -838,7 +842,7 @@ footer{
         display: contents;
         color: white;
     }
-    #hamburger:active, .primaryh{
+    #hamburger:hover .primaryh{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -865,18 +869,18 @@ footer{
     .pic{
         display: none;
     }
+    .buyers, .sellers{
+        width: 462px;
+        height: 400px;
+    }
     .section8{
         gap: 30px;
     }
     .videopic{
-        width: 400px;
+        width: 464px;
     }
     .videopic1{
-        width: 830px;
-    }
-    .buyers, .sellers{
-        width: 400px;
-        height: 400px;
+        width: 955px;
     }
     .box4, .box2, .section2{
         gap: 10px;
@@ -898,6 +902,24 @@ footer{
     }
     .section8 img, .sec8text, .sec8head{
         width: 200px;
+    }
+    .buyers, .sellers{
+        width: 332px;
+        height: 350px;
+    }
+    .videopic{
+        width: 335px;
+    }
+    .videopic1,.sec3text{
+        width: 700px;
+    }
+    .section4{
+        gap: 10px;
+    }
+}
+@media screen and (max-width:810px) {
+    .sec9text{
+        width: 600px;
     }
 }
 @media screen and (max-width:940px) {
@@ -934,18 +956,8 @@ footer{
     .section1{
         flex-direction: column;
     }
-    .buyers, .sellers{
-        width: 300px;
-        height: 300px;
-    }
     .flextext{
         font-size: 50px;
-    }
-    .videopic1{
-        width: 630px;
-    }
-    .videopic{
-        width: 300px;
     }
     .play{
         top: 40%;
@@ -978,6 +990,7 @@ footer{
     }
     .sec6text{
         font-size: 40px;
+        width: auto;
     }
     .section1{
         padding: 50px 30px;
@@ -988,9 +1001,6 @@ footer{
     }
     .section15{
         margin: 50px 0;
-    }
-    .sec6text{
-        width: auto;
     }
 }
 @media screen and (max-width:712px) {
@@ -1006,6 +1016,20 @@ footer{
     .box2 img, .pics{
         width: auto;
         height: auto;
+    }
+    .buyers, .sellers, .videopic1, .text4text,.sec6text, .videopic, .sec3text{
+        width: 500px;
+        height: auto;
+    }
+    .sec6flex{
+        flex-direction: column;
+    }
+    .section5{
+        flex-direction: column;
+    }
+    .play1{
+        left: 41%;
+        top: 32%;
     }
 }
 @media screen and (max-width:685px) {
@@ -1032,6 +1056,12 @@ footer{
         line-height: normal;
         margin: 20px 0;
     }
+    .sec11head{
+        margin-bottom: 3px;
+    }
+    .flex{
+        margin-bottom: 25px;
+    }
 }
 @media screen and (max-width:660px) {
     .section8{
@@ -1055,9 +1085,9 @@ footer{
         margin-bottom: -10px;
     }
     .section8 img{
-        width: 400px;
-        height: 300px;
-    } 
+        width: 500px;
+        height: 350px;
+    }
     .section5{
         gap: 5px;
     }
@@ -1070,10 +1100,6 @@ footer{
     }
     .section4{
         height: 250px;
-    }
-    .buyers, .sellers{
-        max-width: 370px;
-        margin: 0 5px;
     }
     .sec12text, .sec12text span{
         font-size: x-large;
@@ -1112,23 +1138,9 @@ footer{
     .sec6flex, .sec6pic{
         gap: 25px;
     }
-    .videopic1{
-        width: 480px;
-    }
-    .videopic{
-        width: 230px;
-    }
-    .play{
-        top: 32%;
-        left: 32%;
-    }
-    .play1{
-        top: 30%;
-        left: 42%;
-    }
 }
 @media screen and (max-width:630px) {
-    .sec10main{
+    .sec10main,.sec9text{
         max-width: 500px;
     }
     .sec10head{
@@ -1152,9 +1164,6 @@ footer{
     }
     .section5{
         flex-direction: column;
-    }
-    .buyers, .sellers{
-        width: auto;
     }
     nav{
         padding: 10px 20px;
@@ -1214,23 +1223,23 @@ footer{
     .box2 img{
         height: 200px;
     }
+    .buyers, .sellers, .sec4text,.section8 img,.sec9text{
+        width: 420px;
+    }
+    .sec3text, .sec6text{
+        width: auto;
+    }
     .pics{
         height: 344px;
+    }
+    .videopic,.videopic1{
+        width: 430px;
     }
     .sec6pic{
         gap: 10px;
     }
     .sec6flex{
         gap: 20px;
-    }
-    .videopic1{
-        width: 380px;
-    }
-    .videopic{
-        width: 180px;
-    }
-    .play{
-        top: 24%;
     }
     .sec8text, .sec8head{
         width: 380px;
@@ -1265,18 +1274,29 @@ footer{
         width: 170px;
     }
 }
-@media screen and (max-width:420px) {
-    .box2 img{
-        height: 140px;
-    }
+@media screen and (max-width:440px) {
     .pics{
         height: 243px;
     }
+    .box2 img{
+        height: 140px;
+    }
+    .buyers,.sellers, .videopic, .videopic1, .sec9text,.sec4text{
+        width: 295px;
+    }
+    .play{
+        top: 32%;
+        left: 38%;
+    }
+    .play1{
+        left: 38%;
+        top: 19%;
+    }
+}
+@media screen and (max-width:420px) {
+    
     .sec6flex{
         flex-direction: column;
-    }
-    .videopic1, .videopic{
-        width: 260px;
     }
     .buyers, .sellers{
         height: 230px;
