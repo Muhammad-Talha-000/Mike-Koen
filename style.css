@@ -838,7 +838,7 @@ footer{
         display: contents;
         color: white;
     }
-    #hamburger:active .primaryh{
+    #hamburger:active, .primaryh{
         display: flex;
         justify-content: center;
         align-items: center;
