@@ -68,6 +68,9 @@ nav{
 .secondary a, #hamburger a{
     text-decoration: none;
 }
+.primary img{
+    cursor: pointer;
+}
 .primary button, .secondary button, .primaryh button{
     background-color: transparent;
     display: flex;
