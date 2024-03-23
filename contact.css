@@ -175,7 +175,7 @@ form input{
     }
     .flex img{
         width: 300px;
-        height: 68.28px;    
+        height: auto;
     }
     .text{
         font-size: 50px;
