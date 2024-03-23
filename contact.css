@@ -129,7 +129,7 @@ form input{
     padding: 15px;
     border-radius: 10px;
 }
-textarea{
+.s2form textarea{
     width: 255px !important;
 }
 .inpt input{
