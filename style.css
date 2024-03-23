@@ -65,7 +65,7 @@ nav{
 .downarrow{
     color: white;
 }
-.secondary a{
+.secondary a, #hamburger a{
     text-decoration: none;
 }
 .primary button, .secondary button, .primaryh button{
