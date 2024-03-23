@@ -129,6 +129,9 @@ form input{
     padding: 15px;
     border-radius: 10px;
 }
+textarea{
+    width: 255px !important;
+}
 .inpt input{
     border: none;
     height: 29px;
