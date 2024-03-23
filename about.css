@@ -96,6 +96,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin: 0 10px;
 }
 .s3text{
     width: 350px;
@@ -158,39 +159,36 @@ header{
         width: 500px;
     }
     .s1 img{
-        width: 500px;
-    }
-}
-@media screen and (max-width:700px) {
-    .s2text, .pi, .s1 img{
         width: 600px;
     }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
+    .s2text, .pi{
+        width: 595px;
+    }
+}
+@media screen and (max-width:605px) {
     .s2text, .pi, .s1 img, .s1main{
-        width: 500px;
+        max-width: 500px;
     }
 }
 @media screen and (max-width:500px) {
     .s2text, .pi, .s1 img, .s1main{
-        width: 400px;
+        max-width: 400px;
     }
 }
 @media screen and (max-width:400px) {
     .s2text, .pi, .s1 img, .s1main{
-        width: 300px;
+        max-width: 300px;
+        height: auto;
     }
 }
 @media screen and (max-width:300px) {
     .s2text, .pi, .s1 img, .s1main{
-        width: 280px;
+        max-width: 280px;
     }
 }
-@media screen and (max-width:920px) {
-    .s2text{
-        width: 600px;
-        margin: 10px;
-    }
+@media screen and (max-width:920px){
     .text{
         font-size: 50px;
     }
@@ -216,7 +214,7 @@ header{
     .s1, .s3{
         gap: 15px;
     }
-    .s2text,.s1main{
+    .s1main{
         width: auto;
         margin: 0 20px;
     }
